@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
+    <div class="header-container">
+
+      <a href="http://localhost:50565/"><i class="fa-solid fa-arrow-left"></i></a>
+
+      <span class="custom-title">Detalhes do Pokémon</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content>
+
+  <ion-card *ngIf="pokemon">
+    <ion-card-header>
+      <ion-card-title>{{ pokemon.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Tipo:</strong> {{ pokemon.types }}</p>
+      <hr>
+      <p><strong>Altura:</strong> {{ pokemon.height }} </p>
+      <hr>
+      <p><strong>Peso:</strong> {{ pokemon.weight }} </p>
+      <hr>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -14,11 +14,12 @@ export class PokemonService {
     return this.http.get(`${this.apiUrl}/pokemon?limit=${limit}&offset=${offset}}`);
   }
 
-  getPokemonDetails(name: string): Observable<any> {
+  getPokemonDetailsById(name: string): Observable<any> {
     return this.http.get(`${this.apiUrl}/pokemon/${name}`);
   }
 
   getPokemonImage(id: number): string {
     return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
   }
+
 }

@@ -1,0 +1,28 @@
+hr{
+  height: 1px;
+  background-color: rgb(132, 132, 132);
+}
+
+ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.header-container {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.custom-title {
+  font-size: 18px;
+  color: whitesmoke;
+}
